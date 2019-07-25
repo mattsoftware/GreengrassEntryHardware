@@ -1,0 +1,635 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_USB:CH340G U?
+U 1 1 5D395410
+P 3300 3450
+F 0 "U?" H 3050 4000 50  0000 C CNN
+F 1 "CH340G" H 3500 2900 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3350 2900 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 2950 4250 50  0001 C CNN
+	1    3300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4050 3300 4450
+$Comp
+L Device:Crystal Y?
+U 1 1 5D3A7628
+P 2350 3850
+F 0 "Y?" H 2350 4000 50  0000 C CNN
+F 1 "12MHZ" H 2350 3700 50  0000 C CNN
+F 2 "" H 2350 3850 50  0001 C CNN
+F 3 "~" H 2350 3850 50  0001 C CNN
+	1    2350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2550 3300 2850
+Connection ~ 3300 2550
+Wire Wire Line
+	3200 2550 3300 2550
+Wire Wire Line
+	3200 2850 3200 2550
+$Comp
+L Device:C C?
+U 1 1 5D3AAFD0
+P 2650 4100
+F 0 "C?" H 2765 4146 50  0000 L CNN
+F 1 "22p" H 2765 4055 50  0000 L CNN
+F 2 "" H 2688 3950 50  0001 C CNN
+F 3 "~" H 2650 4100 50  0001 C CNN
+	1    2650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D3ABE07
+P 2000 4100
+F 0 "C?" H 2115 4146 50  0000 L CNN
+F 1 "22p" H 2115 4055 50  0000 L CNN
+F 2 "" H 2038 3950 50  0001 C CNN
+F 3 "~" H 2000 4100 50  0001 C CNN
+	1    2000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3850 2000 3850
+Wire Wire Line
+	1850 3850 1850 3650
+Wire Wire Line
+	1850 3650 2900 3650
+Wire Wire Line
+	2000 3950 2000 3850
+Connection ~ 2000 3850
+Wire Wire Line
+	2000 3850 1850 3850
+Wire Wire Line
+	2500 3850 2650 3850
+Wire Wire Line
+	2650 3950 2650 3850
+Connection ~ 2650 3850
+Wire Wire Line
+	2650 3850 2900 3850
+Wire Wire Line
+	2000 4250 2000 4450
+Connection ~ 2000 4450
+Wire Wire Line
+	2000 4450 2650 4450
+Wire Wire Line
+	2650 4250 2650 4450
+Connection ~ 2650 4450
+Wire Wire Line
+	2650 4450 3300 4450
+Wire Wire Line
+	1250 4450 2000 4450
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5D39C7F4
+P 1250 3350
+F 0 "J?" H 1100 3700 50  0000 C CNN
+F 1 "USB_B_Micro" H 1500 3000 50  0000 C CNN
+F 2 "" H 1400 3300 50  0001 C CNN
+F 3 "~" H 1400 3300 50  0001 C CNN
+	1    1250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D3B1209
+P 1750 2900
+F 0 "C?" H 1865 2946 50  0000 L CNN
+F 1 "10n" H 1865 2855 50  0000 L CNN
+F 2 "" H 1788 2750 50  0001 C CNN
+F 3 "~" H 1750 2900 50  0001 C CNN
+	1    1750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2550 1750 2750
+Connection ~ 3200 2550
+Wire Wire Line
+	1750 2550 3200 2550
+Wire Wire Line
+	1250 3850 1250 4450
+Wire Wire Line
+	1250 3750 1250 3850
+Connection ~ 1250 3850
+Wire Wire Line
+	1250 3850 1750 3850
+Wire Wire Line
+	1750 3850 1750 3050
+$Comp
+L Connector:Raspberry_Pi_2_3 J?
+U 1 1 5D38E9EB
+P 5900 3850
+F 0 "J?" H 5250 5100 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 6600 2600 50  0000 C CNN
+F 2 "" H 5900 3850 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5900 3850 50  0001 C CNN
+	1    5900 3850
+	1    0    0    -1  
+$EndComp
+Text Label 9700 4500 0    50   ~ 0
+IRQ
+Text Label 9700 4800 0    50   ~ 0
+3.3V
+Text Label 9700 4700 0    50   ~ 0
+RST
+Text Label 9700 4600 0    50   ~ 0
+GND
+Text Label 9700 4400 0    50   ~ 0
+MISO
+Text Label 9700 4300 0    50   ~ 0
+MOSI
+Text Label 9700 4200 0    50   ~ 0
+SCK
+Text Label 9700 4100 0    50   ~ 0
+SDA-CS
+$Comp
+L Connector_Generic:Conn_01x08 J?
+U 1 1 5D3BD9C3
+P 9600 4350
+F 0 "J?" H 9600 4750 50  0000 C CNN
+F 1 "MFRC-522" H 9600 3850 50  0000 C CNN
+F 2 "" H 9600 4350 50  0001 C CNN
+F 3 "~" H 9600 4350 50  0001 C CNN
+	1    9600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2000 6100 2550
+Wire Wire Line
+	5100 4350 4500 4350
+Wire Wire Line
+	4500 4350 4500 6250
+Text Label 9700 3250 0    50   ~ 0
+GND
+Text Label 9700 3150 0    50   ~ 0
+CLOSED
+Text Label 9700 3050 0    50   ~ 0
+AUTO_OUT
+Text Label 9700 2950 0    50   ~ 0
+AUTO
+Text Label 9700 2850 0    50   ~ 0
+OPEN
+Text Label 9700 2750 0    50   ~ 0
+EXIT
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5D3C1839
+P 9600 2900
+F 0 "J?" H 9600 3200 50  0000 C CNN
+F 1 "AutomaticSlidingDoor" H 9650 2500 50  0000 C CNN
+F 2 "" H 9600 2900 50  0001 C CNN
+F 3 "~" H 9600 2900 50  0001 C CNN
+	1    9600 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3150 4450 3150
+Wire Wire Line
+	6000 2000 6000 2550
+Wire Wire Line
+	6100 2000 7300 2000
+Wire Wire Line
+	8250 3200 8250 5450
+Wire Wire Line
+	7550 5600 5900 5600
+Wire Wire Line
+	5900 5600 5900 5150
+Wire Wire Line
+	6200 5150 6200 5450
+Wire Wire Line
+	6200 5450 8250 5450
+Wire Wire Line
+	8450 3100 8150 3100
+Wire Wire Line
+	8150 3100 8150 6150
+Wire Wire Line
+	8150 6150 4600 6150
+Wire Wire Line
+	4600 6150 4600 4450
+Wire Wire Line
+	4600 4450 5100 4450
+Wire Wire Line
+	8450 2900 7950 2900
+Wire Wire Line
+	7950 2900 7950 4650
+Wire Wire Line
+	7950 4650 6700 4650
+Wire Wire Line
+	7850 2800 7850 3750
+Wire Wire Line
+	7850 3750 6700 3750
+Wire Wire Line
+	8450 2700 7750 2700
+Wire Wire Line
+	7750 2700 7750 3650
+Wire Wire Line
+	7750 3650 6700 3650
+Wire Wire Line
+	7850 4150 7850 4350
+Wire Wire Line
+	6700 4350 7850 4350
+Wire Wire Line
+	7400 4450 7400 4150
+Wire Wire Line
+	7400 4150 6700 4150
+Wire Wire Line
+	3300 4450 3900 4450
+Wire Wire Line
+	4400 5600 5500 5600
+Wire Wire Line
+	5500 5600 5500 5150
+Connection ~ 3300 4450
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D44B757
+P 9850 5250
+F 0 "J?" H 9800 5350 50  0000 L CNN
+F 1 "IndicatorLED" H 9650 5050 50  0000 L CNN
+F 2 "" H 9850 5250 50  0001 C CNN
+F 3 "~" H 9850 5250 50  0001 C CNN
+	1    9850 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4250 5100 4250
+Wire Wire Line
+	7550 4550 7550 5350
+Wire Wire Line
+	8950 5350 7550 5350
+$Comp
+L Device:R_US R?
+U 1 1 5D455FFA
+P 9100 5350
+F 0 "R?" V 9200 5250 50  0000 C CNN
+F 1 "100" V 9200 5450 50  0000 C CNN
+F 2 "" V 9140 5340 50  0001 C CNN
+F 3 "~" H 9100 5350 50  0001 C CNN
+	1    9100 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9250 5350 9650 5350
+Wire Wire Line
+	8050 6050 4700 6050
+Wire Wire Line
+	4700 3250 5100 3250
+Wire Wire Line
+	4450 2950 4450 3150
+Wire Wire Line
+	4450 2950 5100 2950
+$Comp
+L Device:R_US R?
+U 1 1 5D45DAF8
+P 2150 3450
+F 0 "R?" V 2250 3350 50  0000 C CNN
+F 1 "27" V 2250 3550 50  0000 C CNN
+F 2 "" V 2190 3440 50  0001 C CNN
+F 3 "~" H 2150 3450 50  0001 C CNN
+	1    2150 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D45DDA2
+P 2450 3350
+F 0 "R?" V 2350 3250 50  0000 C CNN
+F 1 "27" V 2350 3450 50  0000 C CNN
+F 2 "" V 2490 3340 50  0001 C CNN
+F 3 "~" H 2450 3350 50  0001 C CNN
+	1    2450 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 3350 2300 3350
+Wire Wire Line
+	2600 3350 2900 3350
+Wire Wire Line
+	1550 3450 2000 3450
+Wire Wire Line
+	2300 3450 2900 3450
+$Comp
+L Device:C C?
+U 1 1 5D46749C
+P 3900 2800
+F 0 "C?" H 4015 2846 50  0000 L CNN
+F 1 "10n" H 4015 2755 50  0000 L CNN
+F 2 "" H 3938 2650 50  0001 C CNN
+F 3 "~" H 3900 2800 50  0001 C CNN
+	1    3900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2550 3900 2550
+Wire Wire Line
+	3900 2550 3900 2650
+Wire Wire Line
+	3900 2950 3900 4450
+Connection ~ 3900 4450
+Wire Wire Line
+	3900 4450 4400 4450
+$Comp
+L Device:R_US R?
+U 1 1 5D4761C0
+P 8600 4050
+F 0 "R?" V 8650 3900 50  0000 C CNN
+F 1 "27" V 8650 4250 50  0000 C CNN
+F 2 "" V 8640 4040 50  0001 C CNN
+F 3 "~" H 8600 4050 50  0001 C CNN
+	1    8600 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 4050 6700 4050
+$Comp
+L Device:R_US R?
+U 1 1 5D47C1CF
+P 9050 4150
+F 0 "R?" V 9100 4000 50  0000 C CNN
+F 1 "27" V 9100 4350 50  0000 C CNN
+F 2 "" V 9090 4140 50  0001 C CNN
+F 3 "~" H 9050 4150 50  0001 C CNN
+	1    9050 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 4150 7850 4150
+$Comp
+L Device:R_US R?
+U 1 1 5D481FFB
+P 8600 4250
+F 0 "R?" V 8650 4100 50  0000 C CNN
+F 1 "27" V 8650 4450 50  0000 C CNN
+F 2 "" V 8640 4240 50  0001 C CNN
+F 3 "~" H 8600 4250 50  0001 C CNN
+	1    8600 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D484E3C
+P 9000 4350
+F 0 "R?" V 9050 4200 50  0000 C CNN
+F 1 "27" V 9050 4550 50  0000 C CNN
+F 2 "" V 9040 4340 50  0001 C CNN
+F 3 "~" H 9000 4350 50  0001 C CNN
+	1    9000 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 4450 8350 4450
+Wire Wire Line
+	8350 4450 8350 4350
+Wire Wire Line
+	8350 4350 8850 4350
+Wire Wire Line
+	8450 4250 6700 4250
+$Comp
+L Device:R_US R?
+U 1 1 5D496BCB
+P 8600 4650
+F 0 "R?" V 8650 4500 50  0000 C CNN
+F 1 "27" V 8650 4850 50  0000 C CNN
+F 2 "" V 8640 4640 50  0001 C CNN
+F 3 "~" H 8600 4650 50  0001 C CNN
+	1    8600 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 4750 7300 2000
+$Comp
+L Device:R_US R?
+U 1 1 5D49F22C
+P 8600 2700
+F 0 "R?" V 8650 2550 50  0000 C CNN
+F 1 "27" V 8650 2900 50  0000 C CNN
+F 2 "" V 8640 2690 50  0001 C CNN
+F 3 "~" H 8600 2700 50  0001 C CNN
+	1    8600 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D49F7A2
+P 8600 2900
+F 0 "R?" V 8650 2750 50  0000 C CNN
+F 1 "27" V 8650 3100 50  0000 C CNN
+F 2 "" V 8640 2890 50  0001 C CNN
+F 3 "~" H 8600 2900 50  0001 C CNN
+	1    8600 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D49FDC6
+P 8600 3100
+F 0 "R?" V 8650 2950 50  0000 C CNN
+F 1 "27" V 8650 3300 50  0000 C CNN
+F 2 "" V 8640 3090 50  0001 C CNN
+F 3 "~" H 8600 3100 50  0001 C CNN
+	1    8600 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D4A0302
+P 9000 2800
+F 0 "R?" V 9050 2650 50  0000 C CNN
+F 1 "27" V 9050 3000 50  0000 C CNN
+F 2 "" V 9040 2790 50  0001 C CNN
+F 3 "~" H 9000 2800 50  0001 C CNN
+	1    9000 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D4A157F
+P 9000 3000
+F 0 "R?" V 9050 2850 50  0000 C CNN
+F 1 "27" V 9050 3200 50  0000 C CNN
+F 2 "" V 9040 2990 50  0001 C CNN
+F 3 "~" H 9000 3000 50  0001 C CNN
+	1    9000 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 2700 9400 2700
+Wire Wire Line
+	9150 2800 9400 2800
+Wire Wire Line
+	9150 3000 9400 3000
+Wire Wire Line
+	8750 3100 9400 3100
+Wire Wire Line
+	8250 3200 9400 3200
+Wire Wire Line
+	7850 2800 8850 2800
+Wire Wire Line
+	9400 2900 8750 2900
+Wire Wire Line
+	8050 3000 8850 3000
+Wire Wire Line
+	8750 4050 9400 4050
+Wire Wire Line
+	9200 4150 9400 4150
+Wire Wire Line
+	8750 4250 9400 4250
+Wire Wire Line
+	9150 4350 9400 4350
+Wire Wire Line
+	9400 4550 7550 4550
+Wire Wire Line
+	9400 4650 8750 4650
+Wire Wire Line
+	9400 4750 7300 4750
+Wire Wire Line
+	8050 3000 8050 6050
+Wire Wire Line
+	4700 3250 4700 6050
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 5D4DDC0B
+P 2750 5750
+F 0 "J?" H 2700 5450 50  0000 L CNN
+F 1 "GPIOBreakout" H 2500 6100 50  0000 L CNN
+F 2 "" H 2750 5750 50  0001 C CNN
+F 3 "~" H 2750 5750 50  0001 C CNN
+	1    2750 5750
+	-1   0    0    1   
+$EndComp
+Text Label 2500 6000 0    50   ~ 0
+GND
+Text Label 2450 5600 0    50   ~ 0
+GPIO4
+Text Label 2400 5700 0    50   ~ 0
+GPIO17
+Text Label 2400 5900 0    50   ~ 0
+GPIO27
+Text Label 2400 5800 0    50   ~ 0
+GPIO22
+Wire Wire Line
+	5600 5150 5600 5950
+Wire Wire Line
+	3800 5750 4900 5750
+Wire Wire Line
+	4900 5750 4900 4050
+Wire Wire Line
+	4900 4050 5100 4050
+Wire Wire Line
+	5000 5850 5000 4550
+Wire Wire Line
+	5000 4550 5100 4550
+Wire Wire Line
+	4300 5650 4300 3350
+Wire Wire Line
+	4300 3350 5100 3350
+Wire Wire Line
+	3800 5550 4200 5550
+Wire Wire Line
+	4200 5550 4200 2150
+Wire Wire Line
+	7200 2150 7200 3550
+Wire Wire Line
+	7200 3550 6700 3550
+Wire Wire Line
+	4200 2150 7200 2150
+$Comp
+L Device:R_US R?
+U 1 1 5D518DBE
+P 3650 5550
+F 0 "R?" V 3700 5400 50  0000 C CNN
+F 1 "27" V 3700 5750 50  0000 C CNN
+F 2 "" V 3690 5540 50  0001 C CNN
+F 3 "~" H 3650 5550 50  0001 C CNN
+	1    3650 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D5193C5
+P 3650 5750
+F 0 "R?" V 3700 5600 50  0000 C CNN
+F 1 "27" V 3700 5950 50  0000 C CNN
+F 2 "" V 3690 5740 50  0001 C CNN
+F 3 "~" H 3650 5750 50  0001 C CNN
+	1    3650 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D519DE6
+P 3300 5850
+F 0 "R?" V 3350 5700 50  0000 C CNN
+F 1 "27" V 3350 6050 50  0000 C CNN
+F 2 "" V 3340 5840 50  0001 C CNN
+F 3 "~" H 3300 5850 50  0001 C CNN
+	1    3300 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D51ABA1
+P 3300 5650
+F 0 "R?" V 3350 5500 50  0000 C CNN
+F 1 "27" V 3350 5850 50  0000 C CNN
+F 2 "" V 3340 5640 50  0001 C CNN
+F 3 "~" H 3300 5650 50  0001 C CNN
+	1    3300 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 5550 3500 5550
+Wire Wire Line
+	2950 5650 3150 5650
+Wire Wire Line
+	2950 5750 3500 5750
+Wire Wire Line
+	2950 5850 3150 5850
+Wire Wire Line
+	2950 5950 5600 5950
+Wire Wire Line
+	3450 5850 5000 5850
+Wire Wire Line
+	3450 5650 4300 5650
+Connection ~ 7550 5350
+Wire Wire Line
+	7550 5350 7550 5600
+Wire Wire Line
+	9650 5250 4800 5250
+Wire Wire Line
+	4800 5250 4800 4250
+Wire Wire Line
+	6000 2000 3300 2000
+Wire Wire Line
+	3300 2000 3300 2550
+Wire Wire Line
+	3700 3050 5100 3050
+Wire Wire Line
+	4400 4450 4400 5600
+Wire Wire Line
+	8450 4650 8350 4650
+Wire Wire Line
+	8350 4650 8350 6250
+Wire Wire Line
+	8350 6250 4500 6250
+Wire Wire Line
+	1150 3750 1150 3850
+Wire Wire Line
+	1150 3850 1250 3850
+$EndSCHEMATC
