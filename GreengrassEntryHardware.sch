@@ -252,10 +252,6 @@ Wire Wire Line
 	7400 4150 6700 4150
 Wire Wire Line
 	3300 4450 3900 4450
-Wire Wire Line
-	4400 5600 5500 5600
-Wire Wire Line
-	5500 5600 5500 5150
 Connection ~ 3300 4450
 $Comp
 L Connector_Generic:Conn_01x02 J6
@@ -492,41 +488,27 @@ U 1 1 5D4DDC0B
 P 2750 5750
 F 0 "J2" H 2700 5450 50  0000 L CNN
 F 1 "GPIOBreakout" H 2500 6100 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2750 5750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 2750 5750 50  0001 C CNN
 F 3 "~" H 2750 5750 50  0001 C CNN
 	1    2750 5750
 	-1   0    0    1   
 $EndComp
 Text Label 2500 6000 0    50   ~ 0
 GND
-Text Label 2450 5600 0    50   ~ 0
+Text Label 2450 5900 0    50   ~ 0
 GPIO4
-Text Label 2400 5700 0    50   ~ 0
-GPIO17
-Text Label 2400 5900 0    50   ~ 0
-GPIO27
 Text Label 2400 5800 0    50   ~ 0
-GPIO22
+GPIO17
+Text Label 2400 5700 0    50   ~ 0
+GPIO27
 Wire Wire Line
 	5600 5150 5600 5850
 Wire Wire Line
-	3800 5750 4900 5750
-Wire Wire Line
-	4900 5750 4900 4050
-Wire Wire Line
 	4900 4050 5100 4050
-Wire Wire Line
-	5000 5850 5000 4550
 Wire Wire Line
 	5000 4550 5100 4550
 Wire Wire Line
-	4300 5650 4300 3350
-Wire Wire Line
 	4300 3350 5100 3350
-Wire Wire Line
-	3800 5550 4200 5550
-Wire Wire Line
-	4200 5550 4200 2150
 Wire Wire Line
 	7200 2150 7200 3550
 Wire Wire Line
@@ -534,63 +516,22 @@ Wire Wire Line
 Wire Wire Line
 	4200 2150 7200 2150
 $Comp
-L Device:R_US R5
-U 1 1 5D518DBE
-P 3650 5550
-F 0 "R5" V 3700 5400 50  0000 C CNN
-F 1 "27" V 3700 5750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3690 5540 50  0001 C CNN
-F 3 "~" H 3650 5550 50  0001 C CNN
-	1    3650 5550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R6
-U 1 1 5D5193C5
-P 3650 5750
-F 0 "R6" V 3700 5600 50  0000 C CNN
-F 1 "27" V 3700 5950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3690 5740 50  0001 C CNN
-F 3 "~" H 3650 5750 50  0001 C CNN
-	1    3650 5750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R4
+L Device:R_US R3
 U 1 1 5D519DE6
 P 3300 5850
-F 0 "R4" V 3350 5700 50  0000 C CNN
+F 0 "R3" V 3350 5700 50  0000 C CNN
 F 1 "27" V 3350 6050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3340 5840 50  0001 C CNN
 F 3 "~" H 3300 5850 50  0001 C CNN
 	1    3300 5850
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_US R3
-U 1 1 5D51ABA1
-P 3300 5650
-F 0 "R3" V 3350 5500 50  0000 C CNN
-F 1 "27" V 3350 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3340 5640 50  0001 C CNN
-F 3 "~" H 3300 5650 50  0001 C CNN
-	1    3300 5650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2950 5550 3500 5550
 Wire Wire Line
 	2950 5650 3150 5650
 Wire Wire Line
 	2950 5750 3500 5750
 Wire Wire Line
 	2950 5850 3150 5850
-Wire Wire Line
-	2950 5950 5600 5950
-Wire Wire Line
-	3450 5850 5000 5850
-Wire Wire Line
-	3450 5650 4300 5650
 Wire Wire Line
 	4800 5250 4800 4250
 Wire Wire Line
@@ -600,7 +541,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 3050 5100 3050
 Wire Wire Line
-	4400 4450 4400 5600
+	4400 4450 4400 5350
 Wire Wire Line
 	8450 4650 8350 4650
 Wire Wire Line
@@ -634,10 +575,10 @@ Wire Wire Line
 Wire Wire Line
 	9400 5250 4800 5250
 $Comp
-L power:GNDD #PWR?
+L power:GNDD #PWR0101
 U 1 1 5D3B21CF
 P 6950 5850
-F 0 "#PWR?" H 6950 5600 50  0001 C CNN
+F 0 "#PWR0101" H 6950 5600 50  0001 C CNN
 F 1 "GNDD" H 6954 5695 50  0000 C CNN
 F 2 "" H 6950 5850 50  0001 C CNN
 F 3 "" H 6950 5850 50  0001 C CNN
@@ -682,8 +623,67 @@ Connection ~ 5600 5850
 Wire Wire Line
 	5600 5850 5600 5950
 Wire Wire Line
-	5500 5600 5500 5850
-Wire Wire Line
 	5500 5850 5600 5850
-Connection ~ 5500 5600
+Wire Wire Line
+	5500 5150 5500 5350
+Wire Wire Line
+	5500 5350 4400 5350
+Connection ~ 5500 5350
+Wire Wire Line
+	5000 4550 5000 5650
+Wire Wire Line
+	4900 4050 4900 5550
+Wire Wire Line
+	4300 3350 4300 5750
+Wire Wire Line
+	5500 5350 5500 5850
+Wire Wire Line
+	2950 5550 3500 5550
+Wire Wire Line
+	3450 5850 4200 5850
+Wire Wire Line
+	4200 2150 4200 5850
+Wire Wire Line
+	3800 5750 4300 5750
+Wire Wire Line
+	2950 5950 5600 5950
+Wire Wire Line
+	3450 5650 5000 5650
+Wire Wire Line
+	3800 5550 4900 5550
+$Comp
+L Device:R_US R6
+U 1 1 5D518DBE
+P 3650 5550
+F 0 "R6" V 3700 5400 50  0000 C CNN
+F 1 "27" V 3700 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3690 5540 50  0001 C CNN
+F 3 "~" H 3650 5550 50  0001 C CNN
+	1    3650 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R5
+U 1 1 5D51ABA1
+P 3300 5650
+F 0 "R5" V 3350 5500 50  0000 C CNN
+F 1 "27" V 3350 5850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3340 5640 50  0001 C CNN
+F 3 "~" H 3300 5650 50  0001 C CNN
+	1    3300 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5D5193C5
+P 3650 5750
+F 0 "R4" V 3700 5600 50  0000 C CNN
+F 1 "27" V 3700 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3690 5740 50  0001 C CNN
+F 3 "~" H 3650 5750 50  0001 C CNN
+	1    3650 5750
+	0    1    1    0   
+$EndComp
+Text Label 2400 5600 0    50   ~ 0
+GPIO22
 $EndSCHEMATC
