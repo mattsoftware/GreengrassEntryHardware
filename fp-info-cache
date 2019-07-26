@@ -1,4 +1,4 @@
-15781154768358171
+15782718873409556
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -44631,6 +44631,13 @@ UL/CSA 6x32mm Ceramic Slow Blow Fuse
 0
 2
 2
+GreengrassEntryHardware
+MicroUSB
+
+
+0
+9
+6
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35

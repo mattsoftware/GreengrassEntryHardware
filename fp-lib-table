@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name GreengrassEntryHardware)(type KiCad)(uri ${KIPRJMOD}/GreengrassEntryHardware.pretty)(options "")(descr ""))
+)
