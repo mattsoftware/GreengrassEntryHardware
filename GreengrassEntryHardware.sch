@@ -161,14 +161,14 @@ SCK
 Text Label 9700 4100 0    50   ~ 0
 SDA-CS
 $Comp
-L Connector_Generic:Conn_01x08 J5
+L Connector_Generic:Conn_01x10 J5
 U 1 1 5D3BD9C3
-P 9600 4350
-F 0 "J5" H 9600 4750 50  0000 C CNN
+P 9600 4450
+F 0 "J5" H 9600 5000 50  0000 C CNN
 F 1 "MFRC-522" H 9600 3850 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9600 4350 50  0001 C CNN
-F 3 "~" H 9600 4350 50  0001 C CNN
-	1    9600 4350
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Horizontal" H 9600 4450 50  0001 C CNN
+F 3 "~" H 9600 4450 50  0001 C CNN
+	1    9600 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -177,7 +177,7 @@ Wire Wire Line
 	5100 4350 4500 4350
 Wire Wire Line
 	4500 4350 4500 6250
-Text Label 9700 3250 0    50   ~ 0
+Text Label 9700 2650 0    50   ~ 0
 GND
 Text Label 9700 3150 0    50   ~ 0
 CLOSED
@@ -192,12 +192,12 @@ EXIT
 $Comp
 L Connector_Generic:Conn_01x06 J4
 U 1 1 5D3C1839
-P 9600 2900
-F 0 "J4" H 9600 3200 50  0000 C CNN
-F 1 "AutomaticSlidingDoor" H 9650 2500 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9600 2900 50  0001 C CNN
-F 3 "~" H 9600 2900 50  0001 C CNN
-	1    9600 2900
+P 9600 2800
+F 0 "J4" H 9600 3100 50  0000 C CNN
+F 1 "AutomaticSlidingDoor" H 9650 2400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9600 2800 50  0001 C CNN
+F 3 "~" H 9600 2800 50  0001 C CNN
+	1    9600 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -207,15 +207,9 @@ Wire Wire Line
 Wire Wire Line
 	6100 2000 7300 2000
 Wire Wire Line
-	8250 3200 8250 5450
-Wire Wire Line
 	7550 5600 5900 5600
 Wire Wire Line
 	5900 5600 5900 5150
-Wire Wire Line
-	6200 5150 6200 5450
-Wire Wire Line
-	6200 5450 8250 5450
 Wire Wire Line
 	8450 3100 8150 3100
 Wire Wire Line
@@ -253,17 +247,6 @@ Wire Wire Line
 Wire Wire Line
 	3300 4450 3900 4450
 Connection ~ 3300 4450
-$Comp
-L Connector_Generic:Conn_01x02 J6
-U 1 1 5D44B757
-P 9600 5250
-F 0 "J6" H 9550 5350 50  0000 L CNN
-F 1 "IndicatorLED" H 9400 5050 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Horizontal" H 9600 5250 50  0001 C CNN
-F 3 "~" H 9600 5250 50  0001 C CNN
-	1    9600 5250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4800 4250 5100 4250
 Wire Wire Line
@@ -340,16 +323,14 @@ Wire Wire Line
 $Comp
 L Device:R_US R17
 U 1 1 5D47C1CF
-P 9050 4150
-F 0 "R17" V 9100 4000 50  0000 C CNN
-F 1 "27" V 9100 4350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9090 4140 50  0001 C CNN
-F 3 "~" H 9050 4150 50  0001 C CNN
-	1    9050 4150
+P 9000 4150
+F 0 "R17" V 9050 4000 50  0000 C CNN
+F 1 "27" V 9050 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9040 4140 50  0001 C CNN
+F 3 "~" H 9000 4150 50  0001 C CNN
+	1    9000 4150
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8900 4150 7850 4150
 $Comp
 L Device:R_US R11
 U 1 1 5D481FFB
@@ -457,8 +438,6 @@ Wire Wire Line
 Wire Wire Line
 	8750 3100 9400 3100
 Wire Wire Line
-	8250 3200 9400 3200
-Wire Wire Line
 	7850 2800 8850 2800
 Wire Wire Line
 	9400 2900 8750 2900
@@ -466,8 +445,6 @@ Wire Wire Line
 	8050 3000 8850 3000
 Wire Wire Line
 	8750 4050 9400 4050
-Wire Wire Line
-	9200 4150 9400 4150
 Wire Wire Line
 	8750 4250 9400 4250
 Wire Wire Line
@@ -553,28 +530,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 3850 1250 3850
 $Comp
-L Device:R_US R13
-U 1 1 5D455FFA
-P 8700 5350
-F 0 "R13" V 8800 5250 50  0000 C CNN
-F 1 "100" V 8800 5450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8740 5340 50  0001 C CNN
-F 3 "~" H 8700 5350 50  0001 C CNN
-	1    8700 5350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7550 4550 7550 5350
-Wire Wire Line
-	8550 5350 7550 5350
-Connection ~ 7550 5350
-Wire Wire Line
-	7550 5350 7550 5600
-Wire Wire Line
-	8850 5350 9400 5350
-Wire Wire Line
-	9400 5250 4800 5250
-$Comp
 L power:GNDD #PWR0101
 U 1 1 5D3B21CF
 P 6950 5850
@@ -587,9 +542,6 @@ F 3 "" H 6950 5850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6950 5850 6200 5850
-Wire Wire Line
-	6200 5850 6200 5450
-Connection ~ 6200 5450
 Wire Wire Line
 	6200 5850 6100 5850
 Wire Wire Line
@@ -625,18 +577,11 @@ Wire Wire Line
 Wire Wire Line
 	5500 5850 5600 5850
 Wire Wire Line
-	5500 5150 5500 5350
-Wire Wire Line
-	5500 5350 4400 5350
-Connection ~ 5500 5350
-Wire Wire Line
 	5000 4550 5000 5650
 Wire Wire Line
 	4900 4050 4900 5550
 Wire Wire Line
 	4300 3350 4300 5750
-Wire Wire Line
-	5500 5350 5500 5850
 Wire Wire Line
 	2950 5550 3500 5550
 Wire Wire Line
@@ -686,4 +631,74 @@ F 3 "~" H 3650 5750 50  0001 C CNN
 $EndComp
 Text Label 2400 5600 0    50   ~ 0
 GPIO22
+Text Label 9700 4900 0    50   ~ 0
+LED
+$Comp
+L Device:R_US R13
+U 1 1 5D59BAAD
+P 8600 4850
+F 0 "R13" V 8650 4700 50  0000 C CNN
+F 1 "27" V 8650 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8640 4840 50  0001 C CNN
+F 3 "~" H 8600 4850 50  0001 C CNN
+	1    8600 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 4850 7950 5250
+Wire Wire Line
+	7950 5250 4800 5250
+Wire Wire Line
+	7550 4550 7550 5600
+Wire Wire Line
+	5500 5350 5500 5850
+Wire Wire Line
+	5500 5150 5500 5350
+Connection ~ 5500 5350
+Wire Wire Line
+	5500 5350 4400 5350
+Wire Wire Line
+	6200 5150 6200 5350
+Wire Wire Line
+	6200 5350 7650 5350
+Connection ~ 6200 5350
+Wire Wire Line
+	6200 5350 6200 5850
+Wire Wire Line
+	8750 4850 9400 4850
+Wire Wire Line
+	7950 4850 8450 4850
+$Comp
+L Device:R_US R18
+U 1 1 5D61EB3A
+P 9000 4950
+F 0 "R18" V 9050 4800 50  0000 C CNN
+F 1 "27" V 9050 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9040 4940 50  0001 C CNN
+F 3 "~" H 9000 4950 50  0001 C CNN
+	1    9000 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 4150 9400 4150
+Wire Wire Line
+	8850 4150 7850 4150
+Wire Wire Line
+	9150 4950 9400 4950
+Wire Wire Line
+	8850 4950 8450 4950
+Wire Wire Line
+	8450 4950 8450 5450
+Wire Wire Line
+	8450 5450 4100 5450
+Wire Wire Line
+	4100 5450 4100 4150
+Wire Wire Line
+	4100 4150 5100 4150
+Text Label 9700 5000 0    50   ~ 0
+BUZZER
+Wire Wire Line
+	7650 2600 7650 5350
+Wire Wire Line
+	7650 2600 9400 2600
 $EndSCHEMATC
