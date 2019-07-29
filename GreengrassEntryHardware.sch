@@ -195,7 +195,7 @@ U 1 1 5D3C1839
 P 9600 2800
 F 0 "J4" H 9600 3100 50  0000 C CNN
 F 1 "AutomaticSlidingDoor" H 9650 2400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9600 2800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 9600 2800 50  0001 C CNN
 F 3 "~" H 9600 2800 50  0001 C CNN
 	1    9600 2800
 	1    0    0    -1  

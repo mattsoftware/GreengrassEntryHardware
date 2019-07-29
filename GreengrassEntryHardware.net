@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/Users/matt/Google Drive/Documents/Projects/GreengrassEntry/GreengrassEntryHardware/GreengrassEntryHardware.sch")
-    (date "Monday, 29 July 2019 at 08:59:44 am")
+    (date "Monday, 29 July 2019 at 09:03:16 am")
     (tool "Eeschema (5.1.2-1)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -73,7 +73,7 @@
       (tstamp 5D3BD9C3))
     (comp (ref J4)
       (value AutomaticSlidingDoor)
-      (footprint Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical)
+      (footprint Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal)
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_01x06) (description "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
