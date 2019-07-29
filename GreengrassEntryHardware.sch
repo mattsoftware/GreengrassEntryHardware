@@ -195,7 +195,7 @@ U 1 1 5D3C1839
 P 9600 2800
 F 0 "J4" H 9600 3100 50  0000 C CNN
 F 1 "AutomaticSlidingDoor" H 9650 2400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 9600 2800 50  0001 C CNN
+F 2 "GreengrassEntryHardware:Molex_SPOX_5267-06A_1x06_P2.50mm_Horizontal" H 9600 2800 50  0001 C CNN
 F 3 "~" H 9600 2800 50  0001 C CNN
 	1    9600 2800
 	1    0    0    -1  
@@ -211,29 +211,15 @@ Wire Wire Line
 Wire Wire Line
 	5900 5600 5900 5150
 Wire Wire Line
-	8450 3100 8150 3100
-Wire Wire Line
-	8150 3100 8150 6150
-Wire Wire Line
 	8150 6150 4600 6150
 Wire Wire Line
 	4600 6150 4600 4450
 Wire Wire Line
 	4600 4450 5100 4450
 Wire Wire Line
-	8450 2900 7950 2900
-Wire Wire Line
-	7950 2900 7950 4650
-Wire Wire Line
 	7950 4650 6700 4650
 Wire Wire Line
-	7850 2800 7850 3750
-Wire Wire Line
 	7850 3750 6700 3750
-Wire Wire Line
-	8450 2700 7750 2700
-Wire Wire Line
-	7750 2700 7750 3650
 Wire Wire Line
 	7750 3650 6700 3650
 Wire Wire Line
@@ -438,11 +424,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 3100 9400 3100
 Wire Wire Line
-	7850 2800 8850 2800
-Wire Wire Line
 	9400 2900 8750 2900
-Wire Wire Line
-	8050 3000 8850 3000
 Wire Wire Line
 	8750 4050 9400 4050
 Wire Wire Line
@@ -455,8 +437,6 @@ Wire Wire Line
 	9400 4650 8750 4650
 Wire Wire Line
 	9400 4750 7300 4750
-Wire Wire Line
-	8050 3000 8050 6050
 Wire Wire Line
 	4700 3250 4700 6050
 $Comp
@@ -698,7 +678,27 @@ Wire Wire Line
 Text Label 9700 5000 0    50   ~ 0
 BUZZER
 Wire Wire Line
+	7650 2600 9400 2600
+Wire Wire Line
 	7650 2600 7650 5350
 Wire Wire Line
-	7650 2600 9400 2600
+	8150 6150 8150 2700
+Wire Wire Line
+	8150 2700 8450 2700
+Wire Wire Line
+	8850 2800 8050 2800
+Wire Wire Line
+	8050 2800 8050 6050
+Wire Wire Line
+	8450 2900 7950 2900
+Wire Wire Line
+	7950 2900 7950 4650
+Wire Wire Line
+	8850 3000 7850 3000
+Wire Wire Line
+	7850 3000 7850 3750
+Wire Wire Line
+	8450 3100 7750 3100
+Wire Wire Line
+	7750 3100 7750 3650
 $EndSCHEMATC
