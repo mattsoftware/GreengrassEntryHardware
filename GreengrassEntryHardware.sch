@@ -144,58 +144,46 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 	1    5900 3850
 	1    0    0    -1  
 $EndComp
-Text Label 9700 4500 0    50   ~ 0
+Text Label 9450 4450 0    50   ~ 0
 IRQ
-Text Label 9700 4800 0    50   ~ 0
+Text Label 9450 4750 0    50   ~ 0
 3.3V
-Text Label 9700 4700 0    50   ~ 0
+Text Label 9450 4650 0    50   ~ 0
 RST
-Text Label 9700 4600 0    50   ~ 0
+Text Label 9450 4550 0    50   ~ 0
 GND
-Text Label 9700 4400 0    50   ~ 0
+Text Label 9450 4350 0    50   ~ 0
 MISO
-Text Label 9700 4300 0    50   ~ 0
+Text Label 9450 4250 0    50   ~ 0
 MOSI
-Text Label 9700 4200 0    50   ~ 0
+Text Label 9450 4150 0    50   ~ 0
 SCK
-Text Label 9700 4100 0    50   ~ 0
+Text Label 9450 4050 0    50   ~ 0
 SDA-CS
 $Comp
 L Connector_Generic:Conn_01x10 J5
 U 1 1 5D3BD9C3
-P 9600 4450
-F 0 "J5" H 9600 5000 50  0000 C CNN
-F 1 "MFRC-522" H 9600 3850 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Horizontal" H 9600 4450 50  0001 C CNN
-F 3 "~" H 9600 4450 50  0001 C CNN
-	1    9600 4450
+P 9950 4450
+F 0 "J5" H 9950 5000 50  0000 C CNN
+F 1 "MFRC-522" H 9950 3850 50  0000 C CNN
+F 2 "GreengrassEntryHardware:Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal" H 9950 4450 50  0001 C CNN
+F 3 "~" H 9950 4450 50  0001 C CNN
+	1    9950 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5100 4350 4500 4350
 Wire Wire Line
 	4500 4350 4500 6250
-Text Label 9700 2650 0    50   ~ 0
-GND
-Text Label 9700 3150 0    50   ~ 0
-CLOSED
-Text Label 9700 3050 0    50   ~ 0
-AUTO_OUT
-Text Label 9700 2950 0    50   ~ 0
-AUTO
-Text Label 9700 2850 0    50   ~ 0
-OPEN
-Text Label 9700 2750 0    50   ~ 0
-EXIT
 $Comp
 L Connector_Generic:Conn_01x06 J4
 U 1 1 5D3C1839
-P 9600 2800
-F 0 "J4" H 9600 3100 50  0000 C CNN
-F 1 "AutomaticSlidingDoor" H 9650 2400 50  0000 C CNN
-F 2 "GreengrassEntryHardware:Molex_SPOX_5267-06A_1x06_P2.50mm_Horizontal" H 9600 2800 50  0001 C CNN
-F 3 "~" H 9600 2800 50  0001 C CNN
-	1    9600 2800
+P 9900 2800
+F 0 "J4" H 9900 3100 50  0000 C CNN
+F 1 "AutomaticSlidingDoor" H 9950 2400 50  0000 C CNN
+F 2 "GreengrassEntryHardware:Molex_SPOX_5267-06A_1x06_P2.50mm_Horizontal" H 9900 2800 50  0001 C CNN
+F 3 "~" H 9900 2800 50  0001 C CNN
+	1    9900 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -388,45 +376,25 @@ F 3 "~" H 9000 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8750 2700 9400 2700
-Wire Wire Line
-	9150 2800 9400 2800
-Wire Wire Line
-	9150 3000 9400 3000
-Wire Wire Line
-	8750 3100 9400 3100
-Wire Wire Line
-	9400 2900 8750 2900
-Wire Wire Line
-	8750 4050 9400 4050
-Wire Wire Line
-	8750 4250 9400 4250
-Wire Wire Line
-	9150 4350 9400 4350
-Wire Wire Line
-	9400 4550 7550 4550
-Wire Wire Line
-	9400 4650 8750 4650
-Wire Wire Line
 	4700 3250 4700 6050
 $Comp
 L Connector_Generic:Conn_01x05 J2
 U 1 1 5D4DDC0B
-P 2750 5750
-F 0 "J2" H 2700 5450 50  0000 L CNN
-F 1 "GPIOBreakout" H 2500 6100 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 2750 5750 50  0001 C CNN
-F 3 "~" H 2750 5750 50  0001 C CNN
-	1    2750 5750
+P 2350 5750
+F 0 "J2" H 2300 5450 50  0000 L CNN
+F 1 "GPIOBreakout" H 2100 6100 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 2350 5750 50  0001 C CNN
+F 3 "~" H 2350 5750 50  0001 C CNN
+	1    2350 5750
 	-1   0    0    1   
 $EndComp
-Text Label 2500 6000 0    50   ~ 0
+Text Label 2600 5950 0    50   ~ 0
 GND
-Text Label 2450 5900 0    50   ~ 0
+Text Label 2600 5850 0    50   ~ 0
 GPIO4
-Text Label 2400 5800 0    50   ~ 0
+Text Label 2600 5750 0    50   ~ 0
 GPIO17
-Text Label 2400 5700 0    50   ~ 0
+Text Label 2600 5650 0    50   ~ 0
 GPIO27
 Wire Wire Line
 	5600 5150 5600 5850
@@ -447,12 +415,6 @@ F 3 "~" H 3300 5850 50  0001 C CNN
 	1    3300 5850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2950 5650 3150 5650
-Wire Wire Line
-	2950 5750 3500 5750
-Wire Wire Line
-	2950 5850 3150 5850
 Wire Wire Line
 	4800 5250 4800 4250
 Wire Wire Line
@@ -519,11 +481,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 3350 4300 5750
 Wire Wire Line
-	2950 5550 3500 5550
-Wire Wire Line
 	3800 5750 4300 5750
-Wire Wire Line
-	2950 5950 5600 5950
 Wire Wire Line
 	3450 5650 5000 5650
 Wire Wire Line
@@ -561,9 +519,9 @@ F 3 "~" H 3650 5750 50  0001 C CNN
 	1    3650 5750
 	0    1    1    0   
 $EndComp
-Text Label 2400 5600 0    50   ~ 0
+Text Label 2600 5550 0    50   ~ 0
 GPIO22
-Text Label 9700 4900 0    50   ~ 0
+Text Label 9450 4850 0    50   ~ 0
 LED
 $Comp
 L Device:R_US R13
@@ -597,8 +555,6 @@ Connection ~ 6200 5350
 Wire Wire Line
 	6200 5350 6200 5850
 Wire Wire Line
-	8750 4850 9400 4850
-Wire Wire Line
 	7950 4850 8450 4850
 $Comp
 L Device:R_US R18
@@ -612,11 +568,7 @@ F 3 "~" H 9000 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9150 4150 9400 4150
-Wire Wire Line
 	8850 4150 8250 4150
-Wire Wire Line
-	9150 4950 9400 4950
 Wire Wire Line
 	8850 4950 8450 4950
 Wire Wire Line
@@ -627,10 +579,8 @@ Wire Wire Line
 	4100 5450 4100 4150
 Wire Wire Line
 	4100 4150 5100 4150
-Text Label 9700 5000 0    50   ~ 0
+Text Label 9450 4950 0    50   ~ 0
 BUZZER
-Wire Wire Line
-	7650 2600 9400 2600
 Wire Wire Line
 	7650 2600 7650 5350
 Wire Wire Line
@@ -665,8 +615,6 @@ Wire Wire Line
 	7350 4450 8350 4450
 Wire Wire Line
 	7150 3550 6700 3550
-Wire Wire Line
-	7250 4750 9400 4750
 Wire Wire Line
 	7450 2900 8450 2900
 Wire Wire Line
@@ -744,4 +692,72 @@ Wire Wire Line
 Connection ~ 6100 5750
 Wire Wire Line
 	6100 5750 6100 5850
+Text Label 9350 2700 0    50   ~ 0
+EXIT
+Text Label 9350 2800 0    50   ~ 0
+OPEN
+Text Label 9350 2900 0    50   ~ 0
+AUTO
+Text Label 9350 3100 0    50   ~ 0
+CLOSED
+Text Label 9350 3000 0    50   ~ 0
+AUTO_OUT
+Text Label 9350 2600 0    50   ~ 0
+GND
+Wire Wire Line
+	2550 5950 5600 5950
+Wire Wire Line
+	2550 5850 3150 5850
+Wire Wire Line
+	2550 5750 3500 5750
+Wire Wire Line
+	2550 5650 3150 5650
+Wire Wire Line
+	2550 5550 3500 5550
+Wire Wire Line
+	8750 4050 9750 4050
+Wire Wire Line
+	9150 4150 9750 4150
+Wire Wire Line
+	8750 4250 9750 4250
+Wire Wire Line
+	9150 4350 9750 4350
+Wire Wire Line
+	9150 4950 9750 4950
+Wire Wire Line
+	8750 4850 9750 4850
+Wire Wire Line
+	7250 4750 9750 4750
+Wire Wire Line
+	7550 4550 9750 4550
+Wire Wire Line
+	8750 4650 9750 4650
+Wire Wire Line
+	7650 2600 9700 2600
+Wire Wire Line
+	8750 2700 9700 2700
+Wire Wire Line
+	9150 2800 9700 2800
+Wire Wire Line
+	8750 2900 9700 2900
+Wire Wire Line
+	9150 3000 9700 3000
+Wire Wire Line
+	8750 3100 9700 3100
+Wire Wire Line
+	9350 4450 9750 4450
+Text Label 1250 3950 3    50   ~ 0
+GND
+Wire Wire Line
+	1550 3550 1700 3550
+Text Label 1600 3550 0    50   ~ 0
+ID
+Text Label 1600 3450 0    50   ~ 0
+D-
+Text Label 1600 3350 0    50   ~ 0
+D+
+Text Label 1600 3150 0    50   ~ 0
+VBUS
+Wire Wire Line
+	1550 3150 1850 3150
 $EndSCHEMATC
