@@ -5,14 +5,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Door Entry Raspberry Pi Board"
+Date "2019-08-11"
+Rev "v1.0"
+Comp "mattsoftware.com"
 Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment2 "https://creativecommons.org/licenses/by/4.0/"
+Comment3 "License: CC By 4.0"
+Comment4 "Author: Matthew Paine"
 $EndDescr
 $Comp
 L Interface_USB:CH340G U1
